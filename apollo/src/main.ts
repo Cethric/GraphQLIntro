@@ -2,7 +2,7 @@ import {ApolloServer} from "apollo-server";
 
 import typeDefs from "./schema";
 import {resolvers} from "./resolvers";
-import {MockDatabase} from "./MockDatabase";
+import {MockDatabase} from "./data/MockDatabase";
 import {DatabaseResolverContextFunction} from "./data/IDatabase";
 
 
