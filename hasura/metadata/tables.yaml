@@ -1,0 +1,34 @@
+- table:
+    schema: public
+    name: books
+  configuration:
+    custom_root_fields:
+      insert_one: insert_book
+      select_by_pk: book
+    custom_column_names: {}
+  insert_permissions:
+    - role: public
+      permission:
+        check: {}
+        columns:
+          - author
+          - title
+  select_permissions:
+    - role: public
+      permission:
+        columns:
+          - author
+          - title
+        filter: {}
+  update_permissions:
+    - role: public
+      permission:
+        columns:
+          - author
+          - title
+        filter: {}
+        check: {}
+  delete_permissions:
+    - role: public
+      permission:
+        filter: {}
