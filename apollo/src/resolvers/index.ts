@@ -1,5 +1,5 @@
 import {IResolvers} from "graphql-tools";
-import {IDatabaseContext} from "../data/IDatabase";
+import {IDatabaseContext} from "../data";
 import {IFieldResolver} from "graphql-tools/dist/Interfaces";
 
 interface Resolvers extends IResolvers<any, IDatabaseContext> {
@@ -22,8 +22,8 @@ const resolvers: Resolvers = {
         },
     },
     Mutation: {
-        insert_book: (source, args, context) => {
-            return context.data.insertBook(args.title, args.author);
+        insert_book: (source, {title, author}, context) => {
+            return context.data.insertBook(title, author);
         }
     },
 }
