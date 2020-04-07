@@ -1,1 +1,1 @@
-DROP TABLE "Public"."Books";
+DROP TABLE Books;
