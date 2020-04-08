@@ -1,23 +1,27 @@
-# apollo-client
+# Apollo Client
+
+[Apollo Client React Docs](https://www.apollographql.com/docs/react/)
+
+[Apollo Client VueJS Docs](https://vue-cli-plugin-apollo.netlify.com/guide/)
 
 ## Project setup
-```
-yarn install
+```shell script
+npm run install
 ```
 
 ### Compiles and hot-reloads for development
-```
-yarn serve
+```shell script
+npm run serve
 ```
 
 ### Compiles and minifies for production
-```
-yarn build
+```shell script
+npm run build
 ```
 
 ### Lints and fixes files
-```
-yarn lint
+```shell script
+npm run lint
 ```
 
 ### Customize configuration
